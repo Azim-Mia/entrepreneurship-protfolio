@@ -1,25 +1,47 @@
 {
-  "name": "entrepreneurship-protfolio",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "15.3.2",
-    "nodejs": "^0.0.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "yarn": "^1.22.22"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.2",
-    "tailwindcss": "^4"
-  }
+   "homepage": "https://azim-mia.github.io/fontend-e-commerce-mvc/list",
+   "name": "fontend-e-commerce-mvc",
+   "version": "0.1.0",
+   "private": true,
+   "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
+   },
+   "dependencies": {
+      "@radix-ui/react-dialog": "^1.1.6",
+      "@radix-ui/react-slot": "^1.1.2",
+      "axios": "^1.7.9",
+      "class-variance-authority": "^0.7.1",
+      "clsx": "^2.1.1",
+      "lucide-react": "^0.485.0",
+      "next": "15.1.6",
+      "prop-types": "^15.8.1",
+      "react": "^19.0.0",
+      "react-apexcharts": "^1.7.0",
+      "react-dom": "^19.0.0",
+      "react-hook-form": "^7.54.2",
+      "react-toastify": "^11.0.5",
+      "recharts": "^2.15.2",
+      "sharp": "^0.33.5",
+      "tailwind-merge": "^3.0.2",
+      "tailwindcss-animate": "^1.0.7",
+      "yarn": "^1.22.22",
+      "yup": "^1.6.1"
+   },
+   "devDependencies": {
+      "@eslint/eslintrc": "^3",
+      "@types/node": "^20",
+      "@types/prop-types": "^15.7.14",
+      "@types/react": "^19",
+      "@types/react-dom": "^19",
+      "eslint": "^9",
+      "eslint-config-next": "15.1.6",
+      "postcss": "^8",
+      "tailwindcss": "^3.4.1",
+      "typescript": "^5.7.3"
+   }
 }
