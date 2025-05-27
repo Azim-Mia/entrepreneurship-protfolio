@@ -77,7 +77,13 @@
   * {
     @apply border-border;
   }
+  
   body {
-    @apply bg-background text-foreground;
-  }
+  @apply bg-background text-foreground;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
 }

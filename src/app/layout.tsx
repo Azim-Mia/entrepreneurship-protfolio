@@ -1,4 +1,5 @@
 import "./globals.css";
+import Head from 'next/head'
 /*const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -21,7 +22,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="bn">
+      <Head>
+        <meta charSet="UTF-8" />
+      </Head>
       <body className="" >
       <main>
         {children}
