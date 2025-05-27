@@ -1,8 +1,11 @@
-const Cart = ({ title, value }) => {
+const Cart = ({ title, value, icon }) => {
   return (
-    <div className="bg-white shadow-md rounded-2xl p-6 w-full max-w-sm transition hover:shadow-xl">
-      <p className="text-gray-600 text-sm mb-2">{title}</p>
-      <span className="text-2xl font-bold text-blue-600">{value}</span>
+    <div className="flex justify-between items-center gap-4 bg-gray-100 p-4 rounded-lg shadow-md border-2 ring-1 ring-blue-100">
+      <div className="xs:xs:text-1xl">
+       <p className="xs:text-0.5xl text-gray-600">{title}</p>
+        <p className="text-sm font-bold text-gray-800">{value}</p>
+      </div>
+       <div className="text-3xl text-blue-600">{icon}</div>
     </div>
   );
 };
