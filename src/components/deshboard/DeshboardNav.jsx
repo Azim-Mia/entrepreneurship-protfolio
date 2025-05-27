@@ -14,9 +14,9 @@ const DeshboardNav = () => {
   };
 
   return (
-    <div className="min-h-screen flex bg-gray-100 p-4 xs:small">
+    <div className="min-h-screen flex bg-gray-100 p-4 gap-2 xs:small">
       {/* Sidebar */}
-      <aside className="w-64 bg-white rounded-2xl shadow-lg p-2 space-y-6 xs:w-32">
+      <aside className="w-64 bg-white rounded-2xl shadow-lg p-4 space-y-6 xs:w-32">
         <h1 className="font-bold text-gray-800">আমাদের সেবা</h1>
         <nav className="space-y-4">
           {/* Dashboard toggle */}
