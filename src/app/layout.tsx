@@ -1,5 +1,6 @@
 import "./globals.css";
 import Head from 'next/head'
+import UpperNav from '@/components/UpperNav'
 /*const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
         <meta charSet="UTF-8" />
       </Head>
       <body className="" >
+        <UpperNav />
       <main>
         {children}
         </main>
