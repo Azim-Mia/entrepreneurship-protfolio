@@ -12,7 +12,7 @@ const UpperNav = () => {
      router.push('/login'); 
     }
 }
-  return ( <nav className="flex justify-between font-sans font-semibold xs:small md:text-sm xs:small  mr-5 items-center">
+  return ( <nav className="flex justify-between font-sans font-semibold xs:small md:text-sm xs:small  mr-5 items-center p-4">
       <div>Amader Seba</div>
       <div className ="flex">
         <SearchItems />
