@@ -27,8 +27,10 @@ export default function RootLayout({
       <Head>
         <meta charSet="UTF-8" />
       </Head>
-      <body className="" >
-        <UpperNav />
+      <body>
+       <header className='w-auto xs:w-[400px] sm:w-[992px] lg:w-[1448px] bg-black text-white p-2'>
+         <UpperNav />
+       </header>
       <main>
         {children}
         </main>

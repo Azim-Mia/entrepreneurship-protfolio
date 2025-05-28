@@ -6,6 +6,7 @@ import { BsGraphUp } from "react-icons/bs";
 import { Bell } from "lucide-react"; // Lucide is a great icon library
 import Cart from '@/components/Cart';
 import SearchItems from '@/components/SearchItems';
+import Uddokta from '@/components/deshboard/Uddokta'
 const DeshboardNav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -84,7 +85,7 @@ const DeshboardNav = () => {
          <span><FaUser /></span>
        </div>
         </nav>
-               udoktA
+          <Uddokta />
         <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 xl:grid-cols-3 lg:grid-cols-4 gap-6 bg-white p-4 rounded shadow ">
           <Cart title="মোট ব্যবহারকারী" value="1250" icon={<FaUsers />} />
           <Cart title="মোট সেবা সংখ্যা" value="120" icon={<FaBoxOpen />} />
