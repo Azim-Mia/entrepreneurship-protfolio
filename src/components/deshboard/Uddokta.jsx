@@ -26,7 +26,7 @@ const Uddokta = () => {
       <h1 className="text-2xl font-bold mb-6 text-gray-800">📋 উদ্যোক্তা তালিকা</h1>
 
       {/* Table view for md+ screens */}
-      <div className="hidden md:block sm:block overflow-x-auto rounded-xl shadow">
+      <div className="xs:hidden md:block sm:block overflow-x-auto rounded-xl shadow">
         <table className="min-w-full table-auto bg-white">
           <thead>
             <tr className="bg-blue-100 text-gray-800 text-left text-sm uppercase tracking-wider">
