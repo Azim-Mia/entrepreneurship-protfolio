@@ -1,36 +1,58 @@
 'use client';
-import Link from 'next/link';
-import {useState} from 'react';
+import { useState } from 'react';
 import "./bars.css";
-const isAdmin =false;
-const Bars =() =>{
+import Link from 'next/link';
+import { Menu } from 'lucide-react'; // Burger icon
+
+const Bars = () => {
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isLoggedIn, setLoggedIn] = useState(false); // Simulated auth status
 const [burger_class, setBurgerClass] =useState("burger-bar unClicked");
-const [menu_class,setMenuClass] =useState("menu hidden");
-const [isMenuClicked,setIsClicked] =useState(false);
-  const updateMenu=()=>{
-    if(!isMenuClicked){
-      setBurgerClass("burger-bar clicked");
-      setMenuClass("menu visible");
-    }else{
-     setBurgerClass("burger-bar unClicked");
-      setMenuClass("menu hidden");
-    }
-    setIsClicked(!isMenuClicked)
+  const toggleDropdown = () => {
+ if(!isDropdownOpen){
+  setDropdownOpen(true);
+  setBurgerClass("burger-bar clicked");
+  }else{
+  setBurgerClass("burger-bar unClicked");
+  setDropdownOpen(false)
   }
-  return ( <>
-  <div className="burger_menu" onClick={updateMenu}> 
-  <div className={burger_class}></div>
+  }
+  const handleAuthClick = () => {
+    setLoggedIn(!isLoggedIn);
+    setDropdownOpen(false); // Hide menu after action
+  };
+
+  return (
+    <header className="relative px-4">
+      {/* Menu Icon */}
+      <div className="cursor-pointer absolute" onClick={toggleDropdown}>
+     <div className={burger_class}></div>
     <div className={burger_class}></div>
     <div className={burger_class}></div>
-  </div>
-  <div className ={menu_class}>
-    {isAdmin ? <ul className="p-2 text-center text-[#000]">
-     {isAdmin && <Link href="/deshboard"><li className="p-1 hover:text-white border-b mt-1">Deshboard</li></Link>}
-   <Link href="/"><li className="p-1 hover:text-white border-b mt-1">Home</li></Link>
-  <Link href="/list"><li className="p-1 hover:text-white border-b mt-1">Category</li></Link>
-  <Link href="/shop"><li className="p-1 hover:text-white border-b mt-1">Shop</li></Link>
-  </ul>:<strong>Please login now</strong>}
-  </div>
-  </>)
-}
+      </div>
+
+      {/* Dropdown Menu */}
+      {isDropdownOpen && (
+<div className="absolute top-14 right-4 bg-white border text-black border-gray-200 shadow-md rounded-md">
+          {isLoggedIn ? (
+            <button
+              onClick={handleAuthClick}
+              className="block w-full px-4 py-2 hover:bg-gray-100"
+            >
+              Logout
+            </button>
+          ) : (
+            <button
+              onClick={handleAuthClick}
+              className="block w-full px-4 py-2 hover:bg-gray-100"
+            >
+              Login
+            </button>
+          )}
+        </div>
+      )}
+    </header>
+  );
+};
+
 export default Bars;

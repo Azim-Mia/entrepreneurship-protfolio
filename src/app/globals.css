@@ -87,7 +87,7 @@
     @apply bg-white p-6 rounded-xl shadow-md;
   }
   .small{
-    @apply text-sm p-1
+    @apply text-sm
   }
 }
 

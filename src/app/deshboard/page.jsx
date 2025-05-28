@@ -15,7 +15,7 @@ const DeshboardNav = () => {
   };
 
   return (
-    <div className="h-auto flex bg-gray-100 p-4 gap-2 xs:small">
+    <div className="h-auto w-full flex bg-gray-100 p-4 gap-2 xs:small">
       {/* Sidebar */}
       <aside className="w-64 bg-white rounded-2xl shadow-lg p-4 space-y-6 xs:w-48">
         <h1 className="font-bold text-gray-800">আমাদের সেবা</h1>
@@ -72,7 +72,7 @@ const DeshboardNav = () => {
 
       {/* Main Content */}
       <main className="w-full flex flex-col ">
-        <nav className="flex justify-between flex-wrap gap-4 bg-white p-4 rounded shadow ">
+        <nav className="flex w-full justify-between flex-wrap gap-4 bg-white p-4 rounded shadow ">
        <SearchItems onSearchText={handleSearchText} />  
        <div className="flex gap-4 p-2">
          <span><FaCog /></span>

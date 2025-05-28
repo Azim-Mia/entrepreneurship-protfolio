@@ -1,4 +1,5 @@
 'use client'
+import SearchItems from '@/components/SearchItems';
 import { useRouter } from 'next/navigation';
 import Bars from '@/components/bars/Bars'
 const UpperNav = () => {
@@ -11,9 +12,12 @@ const UpperNav = () => {
      router.push('/login'); 
     }
 }
-  return ( <nav className="flex gap-10 items-center px-4 py-2 bg-gray-100 font-sans text-lg font-semibold xs:small md:text-md m-0">
-     <div><Bars /></div>
+  return ( <nav className="flex justify-between font-sans font-semibold xs:small md:text-sm xs:small  mr-5 items-center">
       <div>Amader Seba</div>
+      <div className ="flex">
+        <SearchItems />
+      <div> <Bars /></div>
+        </div>
     </nav> );
 };
 
