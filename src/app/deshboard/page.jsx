@@ -8,6 +8,7 @@ import Cart from '@/components/Cart';
 import SearchItems from '@/components/SearchItems';
 import UddoktaList from '@/components/UddoktaList'
 import SideBar from '@/components/SideBar'
+import Navbar from '@/components/Navbar'
 const DeshboardNav = () => {
 const [isListOpen, setIsListOpen] =useState(false);
   const handleSearchText = (text) => {
@@ -20,21 +21,7 @@ const [isListOpen, setIsListOpen] =useState(false);
       <SideBar setIsListOpen={setIsListOpen} />
       {/* Main Content */}
       <main className="w-full flex flex-col bg-rose-50">
-        <nav className="flex w-full justify-between flex-wrap gap-4 p-4 rounded shadow-md ">
-      <div>
-         <SearchItems onSearchText={handleSearchText} />  
-      </div>
-       <div className="flex gap-4 p-2">
-         <span><FaCog /></span>
-<div className="relative w-8 h-9">
-      <Bell className="w-6 h-7 text-gray-700" />
-       <span className="absolute -top-1 -left-1 bg-red-500 text-white text-xs font-semibold px-1 py-0.3 rounded-full">
-          0
-        </span>
-    </div>
-         <span><FaUser /></span>
-       </div>
-        </nav>
+      <Navbar />
         {isListOpen && <UddoktaList /> }
         <div className="bg-rose-50 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 xl:grid-cols-3 lg:grid-cols-4 gap-6 bg-white p-4 rounded shadow ">
           <Cart title="মোট ব্যবহারকারী" value="1250" icon={<FaUsers />} />

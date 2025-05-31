@@ -7,7 +7,7 @@ const SideBar =({setIsListOpen})=>{
   const [isOpen, setIsOpen] = useState(false);
   return (<>
           <aside className="max-h-screen w-64 bg-white rounded-2xl shadow-lg p-4 space-y-4 xs:w-48 xs:text-sm">
-        <div className="flex flex-1 gap-2 font-bold text-md xs:text-sm">আমাদের 
+        <div className="flex flex-1 gap-2 font-bold sm:text-sm xs:text-sm lg:text-md">আমাদের 
         <p className="text-green">সেবা</p></div>
         <nav className="space-y-4">
           {/* Dashboard toggle */}
