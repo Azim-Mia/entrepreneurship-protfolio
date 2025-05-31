@@ -12,11 +12,13 @@ const Navbar =()=>{
          <SearchItems onSearchText={handleSearchText} />  
       </div>
        <div className="flex gap-4 p-2">
-         <div className="relative w-12 h-11 bg-white p-1.5 rounded-full ring-1  ring-blue-200">
-     <span className="w-6 h-7 text-gray-700"><FaCog /></span>   
-         </div>
-<div className="relative w-12 h-11 bg-white p-1.5 rounded-full ring-1  ring-blue-200">
-      <Bell className="w-6 h-7 text-gray-700" />
+<div className="relative w-12 h-11 bg-white p-1.5 rounded-full ring-1 ring-blue-200 flex items-center justify-center">
+  <span>
+    <FaCog />
+  </span> 
+</div>
+<div className="relative w-12 h-11 bg-white p-1.5 rounded-full ring-1  ring-blue-200 flex items-center justify-center">
+      <Bell/>
        <span className="absolute -top-1 -left-1 bg-red-500 text-white text-xs font-semibold px-1 py-0.3 rounded-full">
           0
         </span>
@@ -24,8 +26,8 @@ const Navbar =()=>{
 <div className='flex flex-1 gap-2 md:gap-4 lg:gap-6'>
   <p className="opacity-20">|</p>
   <span className="text-blue-300">Azim Islam</span>
-  <div className="relative w-12 h-11 bg-white p-1.5 rounded-full ring-1  ring-blue-200">
-    <span className="w-6 h-7 text-gray-700"><FaUser /></span>
+  <div className="relative w-12 h-11 bg-white p-1.5 rounded-full ring-1  ring-blue-200 flex items-center justify-center">
+    <span><FaUser /></span>
     </div>
 </div>
        </div>
