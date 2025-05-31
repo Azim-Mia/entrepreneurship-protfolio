@@ -23,13 +23,13 @@ const uddoktaInfo = [
 const UddoktaList = () => {
   return (
     <div className="p-6">
-      <h1 className="font-medium font-semibold text-2xl mb-6 bg-white text-black shadow-md p-4">📋 উদ্যোক্তা তালিকা</h1>
+      <h1 className="font-medium font-semibold text-2xl mb-6 bg-white text-blue-600 shadow-md p-4">📋 উদ্যোক্তা </h1>
 
       {/* Table view for md+ screens */}
       <div className="xs:block md:block sm:block overflow-x-auto rounded-xl shadow">
         <table className="min-w-full table-auto bg-white font-semibold font-md">
           <thead >
-            <tr className="bg-blue-100 text-gray-800 text-left text-sm uppercase tracking-wider shadow-md">
+            <tr className="bg-white text-gray-800 text-left text-sm uppercase tracking-wider shadow-md">
               <th className="px-6 py-3">সিরিয়াল</th>
               <th className="px-6 py-3">প্রোফাইল</th>
               <th className="px-6 py-3">দোকানের নাম</th>

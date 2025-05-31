@@ -32,7 +32,7 @@ const SideBar =({setIsListOpen})=>{
                 <p className="text-gray-500 text-sm mb-1 opacity-25">ইউজার ম্যানেজমেন্ট</p>
                 <div className="flex items-center gap-2 text-gray-800 font-semibold">
                   <FaUsers />
-                  <span onClick={()=>setIsListOpen(true)}>উদ্যোক্তা</span>
+                  <span onClick={()=>setIsListOpen(true)} className="hover:bg-gray-light">উদ্যোক্তা</span>
                 </div>
               </div>
 
