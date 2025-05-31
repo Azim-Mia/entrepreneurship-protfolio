@@ -15,13 +15,14 @@ const [isListOpen, setIsListOpen] =useState(false);
   };
 
   return (
-    <div className="text-md font-sans h-screen w-full flex p-2 gap-2 xs:small ">
+    <div className="text-md font-sans h-screen w-full flex p-2 gap-2 xs:text-small ">
       {/* Sidebar */}
       <SideBar setIsListOpen={setIsListOpen} />
       {/* Main Content */}
       <main className="w-full flex flex-col bg-rose-50">
         <nav className="flex w-full justify-between flex-wrap gap-4 p-4 rounded shadow-md ">
-      <div> <SearchItems onSearchText={handleSearchText} />  
+      <div>
+         <SearchItems onSearchText={handleSearchText} />  
       </div>
        <div className="flex gap-4 p-2">
          <span><FaCog /></span>

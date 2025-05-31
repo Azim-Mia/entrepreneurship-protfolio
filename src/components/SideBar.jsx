@@ -6,8 +6,8 @@ import { FaUser,FaCog,FaMoneyBillWave, FaUsers, FaBoxOpen } from "react-icons/fa
 const SideBar =({setIsListOpen})=>{
   const [isOpen, setIsOpen] = useState(false);
   return (<>
-          <aside className="max-h-screen w-72 bg-white rounded-2xl shadow-lg p-4 space-y-6 xs:w-50">
-        <div className="flex flex-1 gap-2 font-bold text-md">আমাদের 
+          <aside className="max-h-screen w-64 bg-white rounded-2xl shadow-lg p-4 space-y-4 xs:w-48 xs:text-sm">
+        <div className="flex flex-1 gap-2 font-bold text-md xs:text-sm">আমাদের 
         <p className="text-green">সেবা</p></div>
         <nav className="space-y-4">
           {/* Dashboard toggle */}
