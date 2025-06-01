@@ -37,7 +37,7 @@ const SideBar =({setIsListOpen})=>{
               </div>
 
               <div className="flex flex-col gap-4 bg-white rounded-xl shadow-md p-2">
-                <p className="text-gray-900 text-sm mb-1opacity-40">সেবা ম্যানেজমেন্ট</p>
+                <p className="text-gray-900 text-sm mb-1 opacity-40">সেবা ম্যানেজমেন্ট</p>
                 <div className="flex items-center gap-2 text-gray-800 font-semibold">
                   <FaBoxOpen className="text-gray-400" />
                   <span className="hover:hover_item">সেবা সমূহ</span>
