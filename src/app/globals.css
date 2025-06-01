@@ -89,6 +89,23 @@
   .small{
     @apply text-sm
   }
+.hover_item {
+  background: pink;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  padding: 0 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.hover_item:hover {
+  background: hotpink;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
 }
 
 @layer utilities {

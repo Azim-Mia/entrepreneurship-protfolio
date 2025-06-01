@@ -6,10 +6,10 @@ import { FaUser,FaCog,FaMoneyBillWave, FaUsers, FaBoxOpen } from "react-icons/fa
 const SideBar =({setIsListOpen})=>{
   const [isOpen, setIsOpen] = useState(false);
   return (<>
-          <aside className="max-h-screen w-64 bg-white rounded-2xl shadow-lg p-4 space-y-4 xs:w-48 xs:text-sm">
+          <aside className="max-h-screen w-64  p-2 space-y-4 xs:w-48 xs:text-sm">
         <div className="flex flex-1 gap-2 font-bold sm:text-sm xs:text-sm lg:text-md">আমাদের 
         <p className="text-green">সেবা</p></div>
-        <nav className="space-y-4">
+        <nav className="space-y-1">
           {/* Dashboard toggle */}
           <div>
      <div className="mt-12">
@@ -18,41 +18,41 @@ const SideBar =({setIsListOpen})=>{
             </strong>
      </div>
             <div onClick={() => setIsOpen((prev) => !prev)}
-              className="flex items-center gap-2 cursor-pointer hover:bg-blue-100 px-2 py-1 rounded"
+              className="flex items-center gap-2 cursor-pointer hover:bg-blue-100 px-6 py-1 rounded"
             >
-              <MdDashboard className="text-xl" />
+              <MdDashboard className="text-xl text-yellow" />
               <span className="text-red-500">ড্যাশবোর্ড</span>
             </div>
           </div>
 
           {/* Dropdown Section */}
           { isOpen && (
-            <div className="space-y-3 ">
-              <div className="bg-white rounded-xl shadow-md p-4 xs:text-1xl">
-                <p className="text-gray-500 text-sm mb-1 opacity-25">ইউজার ম্যানেজমেন্ট</p>
-                <div className="flex items-center gap-2 text-gray-800 font-semibold">
-                  <FaUsers />
-                  <span onClick={()=>setIsListOpen(true)} className="hover:bg-gray-light">উদ্যোক্তা</span>
+            <div className="space-y-4 md:text-md sm:text-sm lg:text-md">
+              <div className="text-md bg-white rounded-xl shadow-md p-0.5 xs:text-sm">
+                <p className="text-gray-500 text-sm mb-1 mt-4 opacity-40">ইউজার ম্যানেজমেন্ট</p>
+                <div className="flex items-center gap-2 text-gray-800 font-semibold mt-2 p-2">
+                  <FaUsers className="text-gray-400" />
+                  <span onClick={()=>setIsListOpen(true)} className="hover:hover_item">উদ্যোক্তা</span>
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl shadow-md p-4">
-                <p className="text-gray-500 text-sm mb-1 opacity-25">সেবা ম্যানেজমেন্ট</p>
+              <div className="flex flex-col gap-4 bg-white rounded-xl shadow-md p-2">
+                <p className="text-gray-900 text-sm mb-1opacity-40">সেবা ম্যানেজমেন্ট</p>
                 <div className="flex items-center gap-2 text-gray-800 font-semibold">
-                  <FaBoxOpen />
-                  <span>সেবা সমূহ</span>
+                  <FaBoxOpen className="text-gray-400" />
+                  <span className="hover:hover_item">সেবা সমূহ</span>
                 </div>
-                <div className="flex items-center gap-2 text-gray-800 font-semibold mt-2">
+                <div className="flex items-center gap-2 text-gray-800 font-semibold">
                   <BsGraphUp />
-                  <span>সেবা ইতিহাস</span>
+                  <span className="hover:hover_item">সেবা ইতিহাস</span>
                 </div>
               </div>
 
               <div className="bg-white rounded-xl shadow-md p-4">
-                <p className="text-gray-500 text-sm mb-1 opacity-25">প্রোফাইল</p>
+                <p className="text-gray-500 text-sm mb-1 opacity-40">প্রোফাইল</p>
                 <div className="flex items-center gap-2 text-gray-800 font-semibold">
-                  <FaUser />
-                  <span>প্রোফাইল</span>
+                  <FaUser className="text-gray-400" />
+                  <span className="hover:hover_item">প্রোফাইল</span>
                 </div>
               </div>
             </div>
